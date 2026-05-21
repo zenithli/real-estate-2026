@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>13城全球房地产投资潜力终极评估 · 2026年权威综合版</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d1b2a;
+    --ink-soft: #1b2a3e;
+    --cream: #f4ede2;
+    --cream-warm: #ebe1d1;
+    --gold: #b8924f;
+    --gold-bright: #d4a857;
+    --rust: #8b3a1f;
+    --moss: #4a5d3a;
+    --slate: #5c6878;
+    --line: rgba(13, 27, 42, 0.12);
+    --line-strong: rgba(13, 27, 42, 0.35);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Serif SC", "Fraunces", "Songti SC", "STSong", serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(184, 146, 79, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 90% 80%, rgba(13, 27, 42, 0.03) 0%, transparent 50%);
+  }
+
+  /* === Newspaper-style masthead === */
+  .masthead {
+    border-bottom: 4px double var(--ink);
+    padding: 48px 0 32px;
+    background: var(--cream);
+  }
+
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--slate);
+  }
+
+  .masthead-top span:first-child::before {
+    content: "◆ ";
+    color: var(--gold);
+  }
+
+  .title-block {
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold);
+  }
+
+  .deck {
+    font-family: "Noto Serif SC", serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+  }
+
+  .byline {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--slate);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 0;
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  /* === Executive Summary Box === */
+  .summary-block {
+    margin: 64px 0;
+    padding: 48px;
+    background: var(--ink);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .summary-block::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--gold);
+  }
+
+  .summary-block::after {
+    content: "01";
+    position: absolute;
+    top: 24px; right: 32px;
+    font-family: "Fraunces", serif;
+    font-size: 6rem;
+    font-weight: 200;
+    color: rgba(244, 237, 226, 0.08);
+    line-height: 1;
+  }
+
+  .summary-block h2 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  .summary-block h2 em {
+    color: var(--gold-bright);
+    font-style: italic;
+  }
+
+  .summary-block p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(244, 237, 226, 0.88);
+    margin-bottom: 16px;
+  }
+
+  .summary-key {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(212, 168, 87, 0.3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .summary-key-item {
+    padding: 16px 20px;
+    background: rgba(244, 237, 226, 0.04);
+    border-left: 2px solid var(--gold);
+  }
+
+  .summary-key-item .label {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    margin-bottom: 8px;
+  }
+
+  .summary-key-item .value {
+    font-family: "Fraunces", serif;
+    font-size: 1.4rem;
+    color: var(--cream);
+    line-height: 1.3;
+  }
+
+  /* === Section structure === */
+  section {
+    margin: 96px 0;
+  }
+
+  .section-header {
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .section-number {
+    font-family: "Fraunces", serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    font-style: italic;
+  }
+
+  .section-title-group {
+    flex: 1;
+  }
+
+  h2.section-title {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+
+  .section-subtitle {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.85rem;
+    color: var(--slate);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* === Tier ranking visual === */
+  .tier-system {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .tier-card {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 32px 36px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tier-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(13, 27, 42, 0.08);
+  }
+
+  .tier-card.t1 { border-left: 6px solid #2d5016; }
+  .tier-card.t2 { border-left: 6px solid var(--moss); }
+  .tier-card.t3 { border-left: 6px solid var(--gold); }
+  .tier-card.t4 { border-left: 6px solid var(--rust); }
+  .tier-card.t5 { border-left: 6px solid #6b1818; }
+
+  .tier-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tier-badge {
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .tier-card.t1 .tier-badge { color: #2d5016; }
+  .tier-card.t2 .tier-badge { color: var(--moss); }
+  .tier-card.t3 .tier-badge { color: var(--gold); }
+  .tier-card.t4 .tier-badge { color: var(--rust); }
+  .tier-card.t5 .tier-badge { color: #6b1818; }
+
+  .tier-name {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .tier-name small {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--slate);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .tier-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .city-chip {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    background: var(--cream-warm);
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  .tier-card.t1 .city-chip { background: rgba(45, 80, 22, 0.08); border-color: rgba(45, 80, 22, 0.25); }
+  .tier-card.t5 .city-chip { background: rgba(107, 24, 24, 0.06); border-color: rgba(107, 24, 24, 0.2); }
+
+  .tier-thesis {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+  }
+
+  /* === Quant table === */
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 32px 0;
+    border: 1px solid var(--line-strong);
+    background: white;
+  }
+
+  table.quant {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.82rem;
+    min-width: 900px;
+  }
+
+  table.quant thead {
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  table.quant th {
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-right: 1px solid rgba(244, 237, 226, 0.1);
+  }
+
+  table.quant td {
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  table.quant tr:hover { background: rgba(184, 146, 79, 0.04); }
+
+  table.quant td:first-child {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+
+  table.quant .tier-mark {
+    display: inline-block;
+    padding: 2px 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-left: 6px;
+    color: white;
+  }
+
+  .tm-t1 { background: #2d5016; }
+  .tm-t2 { background: var(--moss); }
+  .tm-t3 { background: var(--gold); }
+  .tm-t4 { background: var(--rust); }
+  .tm-t5 { background: #6b1818; }
+
+  .number { font-family: "JetBrains Mono", monospace; font-weight: 500; }
+  .positive { color: #2d5016; }
+  .negative { color: #6b1818; }
+  .neutral { color: var(--slate); }
+
+  /* === Two-column editorial === */
+  .article-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .article-body p {
+    font-size: 1.02rem;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    color: var(--ink-soft);
+  }
+
+  .article-body p strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* === City detail card === */
+  .city-detail {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    margin-bottom: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .city-detail:last-child {
+    border-bottom: none;
+  }
+
+  .city-sidebar {
+    border-right: 1px solid var(--line);
+    padding-right: 32px;
+  }
+
+  .city-sidebar h3 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .city-sidebar h3 small {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: var(--slate);
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .city-stats {
+    margin-top: 24px;
+  }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--line);
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.85rem;
+  }
+
+  .stat-label {
+    color: var(--slate);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+  }
+
+  .stat-value {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .city-content h4 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--ink);
+  }
+
+  .city-content h4:first-child { margin-top: 0; }
+
+  .city-content p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin-bottom: 14px;
+    color: var(--ink-soft);
+  }
+
+  .verdict {
+    margin-top: 20px;
+    padding: 18px 22px;
+    background: var(--cream-warm);
+    border-left: 3px solid var(--gold);
+    font-family: "Noto Serif SC", serif;
+    font-size: 0.95rem;
+  }
+
+  .verdict strong {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* === Risk matrix === */
+  .risk-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  .risk-card {
+    padding: 28px;
+    background: white;
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--rust);
+  }
+
+  .risk-card.high { border-top-color: #6b1818; }
+  .risk-card.med-high { border-top-color: var(--rust); }
+  .risk-card.med { border-top-color: var(--gold); }
+  .risk-card.low { border-top-color: var(--moss); }
+
+  .risk-prob {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 8px;
+  }
+
+  .risk-card h4 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .risk-impact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+  }
+
+  .impact-block {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+  }
+
+  .impact-block .impact-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 6px;
+  }
+
+  .impact-block.hit .impact-label::before { content: "▼ "; color: #6b1818; }
+  .impact-block.benefit .impact-label::before { content: "▲ "; color: var(--moss); }
+
+  /* === Portfolio cards === */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .portfolio-card {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 32px;
+    position: relative;
+  }
+
+  .portfolio-card.conservative { border-top: 5px solid var(--moss); }
+  .portfolio-card.balanced { border-top: 5px solid var(--gold); }
+  .portfolio-card.aggressive { border-top: 5px solid var(--rust); }
+
+  .portfolio-card h3 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .portfolio-tagline {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .allocation-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .allocation-city {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  .allocation-bar {
+    flex: 2;
+    height: 8px;
+    background: var(--cream-warm);
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .allocation-fill {
+    height: 100%;
+    background: var(--ink);
+  }
+
+  .portfolio-card.conservative .allocation-fill { background: var(--moss); }
+  .portfolio-card.balanced .allocation-fill { background: var(--gold); }
+  .portfolio-card.aggressive .allocation-fill { background: var(--rust); }
+
+  .allocation-pct {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    width: 42px;
+    text-align: right;
+    font-size: 0.82rem;
+  }
+
+  .portfolio-expected {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+
+  .portfolio-expected .label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 6px;
+  }
+
+  .portfolio-expected .value {
+    font-family: "Fraunces", serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .portfolio-expected .value small {
+    font-size: 0.75rem;
+    color: var(--slate);
+    font-weight: 400;
+    margin-left: 4px;
+  }
+
+  /* === Decision triggers === */
+  .triggers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+  }
+
+  .trigger-block {
+    padding: 24px;
+    background: var(--ink-soft);
+    color: var(--cream);
+  }
+
+  .trigger-block.buy { background: #2d5016; }
+  .trigger-block.sell { background: #6b1818; }
+  .trigger-block.rotate { background: var(--gold); color: var(--ink); }
+
+  .trigger-block h4 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(244, 237, 226, 0.2);
+  }
+
+  .trigger-block.rotate h4 { border-bottom-color: rgba(13, 27, 42, 0.2); }
+
+  .trigger-block ul {
+    list-style: none;
+  }
+
+  .trigger-block li {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding: 8px 0 8px 18px;
+    position: relative;
+  }
+
+  .trigger-block li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: inherit;
+    opacity: 0.6;
+  }
+
+  /* === Pullquote === */
+  .pullquote {
+    margin: 48px 0;
+    padding: 32px 48px;
+    border-top: 1px solid var(--line-strong);
+    border-bottom: 1px solid var(--line-strong);
+    text-align: center;
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--ink);
+    position: relative;
+  }
+
+  .pullquote::before, .pullquote::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .pullquote::before { top: -1px; }
+  .pullquote::after { bottom: -1px; }
+
+  .pullquote em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  /* === Caveats === */
+  .caveats {
+    margin-top: 64px;
+    padding: 40px;
+    background: var(--cream-warm);
+    border: 1px solid var(--line);
+  }
+
+  .caveats h3 {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  .caveats ol {
+    padding-left: 24px;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+  }
+
+  .caveats li {
+    margin-bottom: 12px;
+    padding-left: 8px;
+  }
+
+  /* === Footer === */
+  footer {
+    border-top: 4px double var(--ink);
+    margin-top: 96px;
+    padding: 48px 0;
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  footer .footer-mark {
+    font-family: "Fraunces", serif;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  footer .footer-mark em {
+    color: var(--gold);
+  }
+
+  footer .footer-meta {
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: rgba(244, 237, 226, 0.6);
+  }
+
+  /* === Responsive === */
+  @media (max-width: 900px) {
+    .container { padding: 0 20px; }
+    .summary-key { grid-template-columns: 1fr; }
+    .city-detail { grid-template-columns: 1fr; }
+    .city-sidebar { border-right: none; border-bottom: 1px solid var(--line); padding-right: 0; padding-bottom: 24px; }
+    .risk-matrix { grid-template-columns: 1fr; }
+    .portfolio-grid { grid-template-columns: 1fr; }
+    .triggers { grid-template-columns: 1fr; }
+    .summary-block { padding: 32px 24px; }
+    .section-header { flex-direction: column; gap: 12px; align-items: flex-start; }
+    .section-number { font-size: 2.5rem; }
+    h2.section-title { font-size: 1.7rem; }
+    .pullquote { padding: 24px 20px; font-size: 1.2rem; }
+  }
+
+  /* === Print === */
+  @media print {
+    body { background: white; }
+    .summary-block, .tier-card, .risk-card, .portfolio-card {
+      break-inside: avoid;
+    }
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .summary-block, .tier-card, .city-detail {
+    animation: fadeUp 0.6s ease backwards;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-top">
+      <span>独立投资研究 · INDEPENDENT RESEARCH</span>
+      <span>2026年5月版 · VOL. I</span>
+    </div>
+    <div class="title-block">
+      <div class="eyebrow">十年期 · 美元视角 · 地缘加权 35%</div>
+      <h1>13城全球房地产<br><em>投资潜力终极评估</em></h1>
+      <p class="deck">基于四份独立分析报告的权威综合版。融合 PwC-ULI 2026 亚太新兴趋势、JLL 全球展望、Kearney 全球城市指数、Knight Frank 价格指数及第一手政策数据，回答唯一的问题：未来十年，哪些城市真正值得投入美元资本。</p>
+      <div class="byline">综合自 13城对比报告 · 美元视角核心地段报告 · 全球城市潜力分析</div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ============ EXECUTIVE SUMMARY ============ -->
+<div class="summary-block">
+  <h2>核心结论 · <em>Bottom Line First</em></h2>
+  <p>四份独立分析在三个根本判断上高度收敛：<strong>地缘政治权重必须从传统的 15-20% 提升至 35%</strong>；<strong>评估视角必须从"机构合规"转向"普通外国自然人 + 美元退出"</strong>；<strong>新加坡、上海、伦敦超豪宅段在新框架下大幅降级</strong>。</p>
+  <p>未来十年，真正能完成"购入 → 产生净现金 → 对冲汇兑损失 → 顺利套现离场"完整闭环的城市，方为核心资产。按此严格标准，<strong>大阪、东京、迪拜构成不可争议的第一梯队</strong>；吉隆坡作为"地缘瑞士"提供战略避险溢价；上海、伦敦超豪宅段、首尔（对外资）应在十年内坚决回避。</p>
+  <div class="summary-key">
+    <div class="summary-key-item">
+      <div class="label">最佳综合配置</div>
+      <div class="value">大阪 35%</div>
+    </div>
+    <div class="summary-key-item">
+      <div class="label">最佳美元现金流</div>
+      <div class="value">迪拜 中端区</div>
+    </div>
+    <div class="summary-key-item">
+      <div class="label">必须回避</div>
+      <div class="value">上海 · 伦敦超豪宅</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ METHODOLOGY ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">I</div>
+    <div class="section-title-group">
+      <h2 class="section-title">方法论：为什么这次评估与众不同</h2>
+      <div class="section-subtitle">Methodology · Why this assessment differs</div>
+    </div>
+  </div>
+
+  <div class="article-body">
+    <p>传统房地产跨境评估存在三个根本缺陷：第一，把"机构能做的"等同于"散户能做的"，从而高估了新加坡这类高税壁市场的实际可投性；第二，把"账面租金收益率"等同于"美元到手回报"，从而低估了汇率与税费摩擦的破坏力；第三，把地缘政治当作"额外修饰"而非"主导变量"。</p>
+
+    <p>本综合报告采用统一的"<strong>美元视角 10 年期 IRR 模型</strong>"：</p>
+
+    <div class="pullquote">
+      美元年化总收益 ≈ <em>净租金 + 本币房价增值 + 汇率贡献</em><br>
+      − 税费摊销 − 政策与地缘风险折价
+    </div>
+
+    <p>权重分配：地缘政治 35%、资本增值 22%、现金流 21%、风险稳定 22%。其中地缘权重之所以达到 35%，是因为敏感性测试显示：在 10 年期内，<strong>本币兑美元 ±20% 对最终 IRR 的影响普遍大于退出资本化率 ±50bp</strong>。换言之，押注城市本身就是押注其货币与制度命运。</p>
+
+    <p>数据来源严格遵循"官方/一级 → 券商 → 媒体"的优先级：各国央行（BOJ/BOE/CBUAE）、IMF WEO、World Bank、PwC-ULI Emerging Trends 2026 亚太与欧洲版、JLL Global Outlook 2026、Knight Frank Prime Global Cities Index Q3 2025、Savills、Cushman & Wakefield、Kearney Global Cities 2025、Resonance Best Cities 2026，以及各国政府公告（沙特皇家令、韩国国土交通部新规、英国财政部 Non-dom 改革等）。</p>
+  </div>
+</section>
+
+<!-- ============ FIVE-TIER RANKING ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">II</div>
+    <div class="section-title-group">
+      <h2 class="section-title">五梯队最终排名</h2>
+      <div class="section-subtitle">The Five Tiers · 综合四份分析后的统一分级</div>
+    </div>
+  </div>
+
+  <div class="tier-system">
+
+    <div class="tier-card t1">
+      <div class="tier-header">
+        <div class="tier-badge">I</div>
+        <div class="tier-name">核心战略资产 <small>Core Strategic Holdings · 必须配置</small></div>
+      </div>
+      <div class="tier-cities">
+        <span class="city-chip">大阪</span>
+        <span class="city-chip">东京</span>
+        <span class="city-chip">迪拜</span>
+      </div>
+      <p class="tier-thesis">三者构成完整的"现金流 + 安全锚 + 美元放大器"组合。大阪兼具估值折扣（仅东京 60-70%）、4.47% 收益率、IR/Expo/磁悬浮三重催化；东京是制度最稳的日元安全资产，全球资本"第三极"；迪拜美元强挂钩、零税、6-8.5% 收益率，但需控周期。三城共同特征：外资准入友好、流动性深、退出路径清晰。</p>
+    </div>
+
+    <div class="tier-card t2">
+      <div class="tier-header">
+        <div class="tier-badge">II</div>
+        <div class="tier-name">有条件配置 <small>Conditional Allocation · 视身份与目标</small></div>
+      </div>
+      <div class="tier-cities">
+        <span class="city-chip">吉隆坡</span>
+        <span class="city-chip">慕尼黑</span>
+        <span class="city-chip">新加坡*</span>
+      </div>
+      <p class="tier-thesis">吉隆坡是"东盟瑞士"——中美博弈下罕见的中立资产，2026 MM2H 新政提供白银/黄金/白金三层签证 + 房产绑定，但林吉特长期疲软。慕尼黑是欧元稳定锚但收益率仅 3.42%。新加坡 (*) 仅在能豁免 60% ABSD 时才进入此档（美国公民、PR、超高净值家办）；普通外资请直接跳过。</p>
+    </div>
+
+    <div class="tier-card t3">
+      <div class="tier-header">
+        <div class="tier-badge">III</div>
+        <div class="tier-name">机会型，不适合重仓 <small>Opportunistic · 单一变量风险高</small></div>
+      </div>
+      <div class="tier-cities">
+        <span class="city-chip">利雅得</span>
+        <span class="city-chip">纽约</span>
+      </div>
+      <p class="tier-thesis">利雅得：2026/1 外资法是十年一遇的开放红利，但 2025/9/25 王室令将利雅得市区租金强制冻结 5 年（至 2030 年），违令罚 12 个月租金——纸面 8.89% 收益率被锁死，逻辑变成纯资本增值博弈。纽约：美元锚资产，但曼哈顿净租金仅 2-3%，FIRPTA 15% 预扣，PSF 2015-2025 实际下跌 29%；适合做对冲非美货币的压舱石，不是收益主仓。</p>
+    </div>
+
+    <div class="tier-card t4">
+      <div class="tier-header">
+        <div class="tier-badge">IV</div>
+        <div class="tier-name">反弹交易型 <small>Tactical Rebound Only · 仅做 2-5 年战术仓</small></div>
+      </div>
+      <div class="tier-cities">
+        <span class="city-chip">香港</span>
+        <span class="city-chip">巴黎</span>
+      </div>
+      <p class="tier-thesis">香港自 2021 峰值跌 25-30%，2024/2 取消所有外国人附加印花税（最大政策红利），连续 9 个月反弹；但高端段（≥160㎡）2025 仍 −21.5%，EIU 评级降至混合政体 5.09。可做 2-5 年反弹交易，不可长期重仓。巴黎是文化资产而非财务资产——WGI 政治稳定 −0.24（13城最低）、IFI 财富税、奥运后基建升级仅带来 2-3% 涨幅。</p>
+    </div>
+
+    <div class="tier-card t5">
+      <div class="tier-header">
+        <div class="tier-badge">V</div>
+        <div class="tier-name">除自用外坚决回避 <small>Avoid Except for Personal Use</small></div>
+      </div>
+      <div class="tier-cities">
+        <span class="city-chip">首尔</span>
+        <span class="city-chip">伦敦超豪宅段</span>
+        <span class="city-chip">上海</span>
+      </div>
+      <p class="tier-thesis">首尔：2025/8 起首都圈外国人"购房许可制" + 4 个月入住 + 2 年强制居住 + 加密货币申报，对纯外资关闭。伦敦：2025/4 非定居者税制废除引发 2024 年 10,800 名百万富翁外迁，£500 万以上 prime 段失血严重（西区中端办公仍可做）。上海：外资单套限购 + 必须在华 ≥1 年 + 资本管制 + 70 年产权 + 台海风险，租金 2.2-2.5% 无法覆盖任何摩擦成本。</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ QUANT TABLE ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">III</div>
+    <div class="section-title-group">
+      <h2 class="section-title">量化对比矩阵</h2>
+      <div class="section-subtitle">Quantitative Matrix · 全部指标基于 2025 Q3 – 2026 Q1 一手数据</div>
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="quant">
+      <thead>
+        <tr>
+          <th>城市</th>
+          <th>核心区均价 (USD/㎡)</th>
+          <th>总租金收益率</th>
+          <th>5年涨幅</th>
+          <th>外资入场摩擦</th>
+          <th>WGI 政治稳定</th>
+          <th>10年美元年化预期</th>
+          <th>评级</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>大阪</td>
+          <td class="number">7,500 – 10,500</td>
+          <td class="number positive">4.47%</td>
+          <td class="number positive">+30~40%</td>
+          <td>取得税 3% + 登录税 2%</td>
+          <td class="number">+1.13</td>
+          <td class="number positive">5.5 – 7.5%</td>
+          <td><span class="tier-mark tm-t1">I</span></td>
+        </tr>
+        <tr>
+          <td>东京</td>
+          <td class="number">14,000 – 28,000</td>
+          <td class="number">2.5 – 4.5%</td>
+          <td class="number positive">+30% / Prime +55.9%</td>
+          <td>同大阪 · 无外资附加</td>
+          <td class="number">+1.13</td>
+          <td class="number positive">4.5 – 6.5%</td>
+          <td><span class="tier-mark tm-t1">I</span></td>
+        </tr>
+        <tr>
+          <td>迪拜</td>
+          <td class="number">2,200 – 6,000</td>
+          <td class="number positive">6.0 – 9.0%</td>
+          <td class="number positive">+198% (Prime)</td>
+          <td>DLD 4% 一次性</td>
+          <td class="number">+0.79</td>
+          <td class="number positive">6.0 – 8.5%</td>
+          <td><span class="tier-mark tm-t1">I</span></td>
+        </tr>
+        <tr>
+          <td>吉隆坡</td>
+          <td class="number">2,000 – 6,300</td>
+          <td class="number">4.0 – 6.0%</td>
+          <td class="number">微涨</td>
+          <td>4% 统一印花税 + RM100万门槛</td>
+          <td class="number">+0.38</td>
+          <td class="number">4.0 – 6.0%</td>
+          <td><span class="tier-mark tm-t2">II</span></td>
+        </tr>
+        <tr>
+          <td>慕尼黑</td>
+          <td class="number">10,000 – 13,450</td>
+          <td class="number">3.42%</td>
+          <td class="number">+5~10%</td>
+          <td>购置税 3.5% (拜仁州)</td>
+          <td class="number">+0.12</td>
+          <td class="number">3.5 – 5.0%</td>
+          <td><span class="tier-mark tm-t2">II</span></td>
+        </tr>
+        <tr>
+          <td>新加坡</td>
+          <td class="number">22,594 – 26,890</td>
+          <td class="number">3.13%</td>
+          <td class="number positive">+27~47%</td>
+          <td class="negative"><strong>ABSD 60%</strong> + SSD 16/12/8/4%</td>
+          <td class="number">+1.23</td>
+          <td class="number negative">0 – 2% (普通外资)</td>
+          <td><span class="tier-mark tm-t2">II*</span></td>
+        </tr>
+        <tr>
+          <td>利雅得</td>
+          <td class="number">1,642</td>
+          <td class="number positive">8.89% (冻结前)</td>
+          <td class="number positive">+45%</td>
+          <td class="negative">5年租金强制冻结 (至2030)</td>
+          <td class="number">−0.05</td>
+          <td class="number">4.5 – 7.0%</td>
+          <td><span class="tier-mark tm-t3">III</span></td>
+        </tr>
+        <tr>
+          <td>纽约</td>
+          <td class="number">11,900 – 22,600</td>
+          <td class="number">2 – 3% (净)</td>
+          <td class="number negative">PSF −29%</td>
+          <td>FIRPTA 15% 预扣</td>
+          <td class="number">−0.10</td>
+          <td class="number">3.5 – 5.5%</td>
+          <td><span class="tier-mark tm-t3">III</span></td>
+        </tr>
+        <tr>
+          <td>香港</td>
+          <td class="number">16,800 – 27,000</td>
+          <td class="number">3.43 – 3.90%</td>
+          <td class="number negative">−25~30% (自峰值)</td>
+          <td>AVD 最高 4.25% (无外资附加)</td>
+          <td class="number">+0.63</td>
+          <td class="number">2.5 – 5.5% (反弹型)</td>
+          <td><span class="tier-mark tm-t4">IV</span></td>
+        </tr>
+        <tr>
+          <td>巴黎</td>
+          <td class="number">10,500 – 11,300</td>
+          <td class="number">3.5 – 4.84%</td>
+          <td class="number">小幅下跌</td>
+          <td>Notary 7-8% + IFI 财富税</td>
+          <td class="number negative">−0.24</td>
+          <td class="number">2.5 – 4.5%</td>
+          <td><span class="tier-mark tm-t4">IV</span></td>
+        </tr>
+        <tr>
+          <td>首尔</td>
+          <td class="number">10,300 – 21,400</td>
+          <td class="number">4.31%</td>
+          <td class="number positive">+30% (江南)</td>
+          <td class="negative">购房许可制 + 强制居住 2 年</td>
+          <td class="number">+0.64</td>
+          <td class="number">3.0 – 5.0% (限本地)</td>
+          <td><span class="tier-mark tm-t5">V</span></td>
+        </tr>
+        <tr>
+          <td>伦敦</td>
+          <td class="number">10,000 – 25,000</td>
+          <td class="number">5.5%</td>
+          <td class="number">~0% (10年)</td>
+          <td class="negative">SDLT 12% + 2% 非居民 + 5% 二套</td>
+          <td class="number">+0.26</td>
+          <td class="number">3.0 – 5.0% (西区办公)</td>
+          <td><span class="tier-mark tm-t5">V</span></td>
+        </tr>
+        <tr>
+          <td>上海</td>
+          <td class="number">5,000 – 6,000</td>
+          <td class="number negative">2.2 – 2.5%</td>
+          <td class="number negative">−10~15%</td>
+          <td class="negative">单套限购 + 资本管制 + 70年产权</td>
+          <td class="number negative">−0.15</td>
+          <td class="number negative">0 – 3%</td>
+          <td><span class="tier-mark tm-t5">V</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ CITY DEEP DIVES ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">IV</div>
+    <div class="section-title-group">
+      <h2 class="section-title">第一梯队深度解析</h2>
+      <div class="section-subtitle">Deep Dives · 大阪 · 东京 · 迪拜</div>
+    </div>
+  </div>
+
+  <!-- 大阪 -->
+  <div class="city-detail">
+    <div class="city-sidebar">
+      <h3>大阪<small>OSAKA · TIER I</small></h3>
+      <div class="city-stats">
+        <div class="stat-row"><span class="stat-label">中央区均价</span><span class="stat-value">$7.5-10.5K/㎡</span></div>
+        <div class="stat-row"><span class="stat-label">租金收益率</span><span class="stat-value">4.47%</span></div>
+        <div class="stat-row"><span class="stat-label">2025 二手公寓 YoY</span><span class="stat-value">+9.4%</span></div>
+        <div class="stat-row"><span class="stat-label">空置率</span><span class="stat-value">3.74%</span></div>
+        <div class="stat-row"><span class="stat-label">2025 商业地价</span><span class="stat-value">+13.6%</span></div>
+        <div class="stat-row"><span class="stat-label">10年美元年化</span><span class="stat-value positive">5.5-7.5%</span></div>
+      </div>
+    </div>
+    <div class="city-content">
+      <h4>核心投资逻辑</h4>
+      <p>大阪是 13 城中"收益/风险比"最优的市场。价格仅东京的 60-70%，租金收益率却高出 1 个百分点，杠杆投资者在 BOJ 加息至 0.75% 后仍能维持正现金流。更关键的是<strong>未来十年三重催化剂集群</strong>：2025 大阪·关西世博会经济影响达 3.6 万亿日元（METI 2025/12/25 公布）；2030 年美高梅主导的日本首个综合度假区（IR）开业，投资 1.27 万亿日元、1,840 间客房、470 张赌台；2034 年后磁悬浮新干线通车，东京-大阪 67 分钟。</p>
+
+      <h4>关键风险</h4>
+      <p>日元长期弱势侵蚀美元回报；除东京外日本所有都府县人口净减少；Yumeshima 周边纯概念盘存在 IR 后空窗风险；BOJ 进一步加息至 1.25% 时杠杆成本上升。</p>
+
+      <div class="verdict">
+        <strong>执行建议 · Tactical Execution</strong>
+        聚焦梅田、难波、天王寺三大核心交通枢纽的高品质二手公寓与新建项目；避开 Yumeshima 纯投机盘；优先 1990 年后 RC/SRC 结构；选择租金收益率 ≥5.5% 的物业以对冲利率上行；使用 50-70% 日元 LTV 自然对冲汇率。
+      </div>
+    </div>
+  </div>
+
+  <!-- 东京 -->
+  <div class="city-detail">
+    <div class="city-sidebar">
+      <h3>东京<small>TOKYO · TIER I</small></h3>
+      <div class="city-stats">
+        <div class="stat-row"><span class="stat-label">23区均价</span><span class="stat-value">$14-28K/㎡</span></div>
+        <div class="stat-row"><span class="stat-label">租金收益率</span><span class="stat-value">2.5-4.5%</span></div>
+        <div class="stat-row"><span class="stat-label">Prime YoY (Knight Frank)</span><span class="stat-value positive">+55.9%</span></div>
+        <div class="stat-row"><span class="stat-label">都心 5 区办公空置</span><span class="stat-value">0.5%</span></div>
+        <div class="stat-row"><span class="stat-label">23 区 2025 净迁入</span><span class="stat-value">+65,219 人</span></div>
+        <div class="stat-row"><span class="stat-label">PwC-ULI 亚太排名</span><span class="stat-value">#1 (连续3年)</span></div>
+      </div>
+    </div>
+    <div class="city-content">
+      <h4>"第三极"资产的独特定位</h4>
+      <p>东京不再仅是收益资产，而是<strong>分散主权信用风险的"第三极"</strong>——美元、人民币之外的稀缺安全锚。基本面：地价连续 23 季度上涨、都心 5 区办公空置 0.5%（JLL 列为全球三大写字楼短缺城市）、Prime 住宅 Knight Frank Q3 2025 YoY +55.9%（全球第一）。日元过去 5 年贬值 30%+，给外资入场提供了相比 2012 年峰值 30-40% 的汇率折扣。</p>
+
+      <h4>FX 是头号变量</h4>
+      <p>敏感性测试明确：日元再贬 20% 将拖累 10 年 IRR 约 1.9 个百分点，而退出资本化率 +50bp 仅拖累 1.2 pct。<strong>FX 影响 > 估值影响</strong>。这意味着东京投资的成败 50% 取决于融资结构。</p>
+
+      <div class="verdict">
+        <strong>执行建议 · Tactical Execution</strong>
+        预算 100-300 万元：江户川/葛饰/足立等 23 区外环；预算 300-500 万：杉并/世田谷/品川；预算 500 万+：港区/中央/涩谷核心。无论何档，使用 50% JPY LTV @1.7% 利率 + 远期/期权 50-70% 分层对冲——这能将 1 年 FX VaR 从 12% 压至 6.5%，是必须支付的"保险费"。
+      </div>
+    </div>
+  </div>
+
+  <!-- 迪拜 -->
+  <div class="city-detail">
+    <div class="city-sidebar">
+      <h3>迪拜<small>DUBAI · TIER I</small></h3>
+      <div class="city-stats">
+        <div class="stat-row"><span class="stat-label">中端区均价</span><span class="stat-value">$2.2-6K/㎡</span></div>
+        <div class="stat-row"><span class="stat-label">中端租金收益</span><span class="stat-value positive">6-9%</span></div>
+        <div class="stat-row"><span class="stat-label">Prime 5年累涨</span><span class="stat-value positive">+198%</span></div>
+        <div class="stat-row"><span class="stat-label">DIFC 办公 cap</span><span class="stat-value">6.25%</span></div>
+        <div class="stat-row"><span class="stat-label">所得/资本利得税</span><span class="stat-value">0%</span></div>
+        <div class="stat-row"><span class="stat-label">AED/USD</span><span class="stat-value">3.6725 (锚定)</span></div>
+      </div>
+    </div>
+    <div class="city-content">
+      <h4>美元现金流的极致放大器</h4>
+      <p>迪拜组合了全球难以复制的四重优势：<strong>AED-USD 硬挂钩（零日常汇率风险）、零所得税/资本利得税/持有税、6-9% 现金流收益、最国际化的外资买家结构（2025H1 超 58% 交易由国际买家完成）</strong>。在欧美核心城市收益率被高利率压制时，迪拜提供罕见的正向杠杆空间。Knight Frank Prime 5 年累涨 198% 是全球之最。</p>
+
+      <h4>必须警惕的尾部风险</h4>
+      <p>市场已出现见顶信号：2025 Q3 Prime 单季 −6.9%；期房占交易 70% 以上但历史 45-55% 项目延迟交付；瑞银 2025 全球泡沫指数将迪拜列入"风险升高"（1.09）；中东地缘冲突随时可能挑战 AED 锚定机制。日常 FX VaR 几乎为零，但尾部去锚是跳跃性损失。</p>
+
+      <div class="verdict">
+        <strong>执行建议 · Tactical Execution</strong>
+        优先 Dubai Marina、JLT、Business Bay、DIFC 等成熟社区现房；坚决避开外围期房（45-55% 延迟率）和小户型同质化项目；总仓位上限 10-20%；首次投资控制在 AED 100万 (~USD 27万) 以内；保留 20% 应急储备；常规无需 FX 对冲，但需为去锚情景配置仓位上限与退出预案。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PULLQUOTE ============ -->
+<div class="pullquote">
+  未来十年决定成败的，不是你买了哪座<em>最有名</em>的城市，<br>
+  而是你的现金流、汇率、税制、退出路径<em>能否闭环</em>。
+</div>
+
+<!-- ============ TIER II-V SUMMARIES ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">V</div>
+    <div class="section-title-group">
+      <h2 class="section-title">第 II-V 梯队关键变量速览</h2>
+      <div class="section-subtitle">Critical Updates · 决定排名的最新政策事件</div>
+    </div>
+  </div>
+
+  <div class="article-body">
+    <p><strong>吉隆坡（II）· 2026 MM2H 新政落地</strong>：白银级（5 年签证，US$15万定存 + RM60万房产）、黄金级（15 年，US$50万 + RM100万）、白金级（20 年，US$100万 + RM200万）。SEZ 特区类别为 21-49 岁人群提供 US$6.5万定存门槛，满足条件可提取最高 50% 定存用于医疗/教育/购房。这把吉隆坡从"东南亚平庸市场"重新定位为"地缘中立 + 长期签证"的双重资产。</p>
+
+    <p><strong>新加坡（II*）· ABSD 60% 与 SSD 双锁定</strong>：外国自然人首套即征 60% ABSD（美高净值身份豁免），2025/7/4 起新购房 SSD 提升至 16/12/8/4%（持有 1-4 年）。普通外资 10 年 IRR 几乎必然为负。仅适合美国公民/PR/家办，且建议起步金额 ≥1,000 万新币。</p>
+
+    <p><strong>利雅得（III）· 2025/9/25 王室令</strong>：利雅得市区住宅与商业租金强制冻结 5 年至 2030 年。已出租物业租金锁定在 2025 年 9 月水平；空置但曾出租物业以 Ejar 平台最后合同价为上限；新建物业首次出租后即冻结。违令罚最高 12 个月租金。这彻底将利雅得从"高现金流增长"降维至"纯资本增值博弈"。同时 2026/1 外资全产权开放是制度史性变革。</p>
+
+    <p><strong>首尔（V）· 2025/8 外国人土地交易许可制</strong>：首都圈外国买家购房须事先获政府审批，承诺 4 个月内入住并居住 ≥2 年；2026 起须 30 天内提交资金来源计划（含加密货币变现申报），数据共享至韩国 FIU 及外国税务机关。违令罚房价 10% + 合同作废。这彻底终结了"全租房杠杆套利"（Gap Investment）的外资玩法。</p>
+
+    <p><strong>伦敦（V）· 非定居者税制 2025/4 废除</strong>：取代汇水制的 4 年 FIG 免税期 + 10 年居住即纳入 40% IHT 全球资产网。导致 2024 年净外迁 10,800 名百万富翁（Henley/New World Wealth），2024/3-2025/5 损失 4.01 亿英镑印花税（Knight Frank 分析）。<strong>策略性区分</strong>：£500 万以上 prime 段坚决回避；West End 中端办公楼（YE rent 增长 + 3.75% yield）仍是可投资产，10 年 IRR 中位 7.0%。</p>
+
+    <p><strong>上海（V）· 政策放松未改根本</strong>：2024/9 限购、首付、利率全方位放松；2025 新房 +10.7% 但二手销量 −23.1%。外资必须在华工作/居住 ≥1 年 + 仅 1 套自住 + 强制人民币结算 + 70 年使用权（非永久产权）+ 台海尾部风险。除自用刚需外，未来 10 年应回避。</p>
+
+    <p><strong>香港（IV）· 2024/2 取消所有外国人附加印花税</strong>：BSD/SSD/NRSD 全部废除，外国人=本地最高 4.25% AVD。连续 9 个月反弹、PwC-ULI 2026 从 19 跃至 10。但高端 ≥160㎡ 段 2025 仍 −21.5%，2026-27 预算提议将 ≥1 亿港币物业税率回调至 6.5%。可做 2-5 年反弹交易，限于 40-100㎡ 中端段。</p>
+
+    <p><strong>巴黎（IV）· 文化情怀大于财务回报</strong>：WGI −0.24（13 城最低）；2024 国民议会解散后政治瘫痪；EIU 从"全面民主"降为"有缺陷民主"；€130 万以上资产需缴 IFI 财富税；notary 7-8% + 资本利得税 36.2%。除自用/身份需求外，不是优先配置。</p>
+
+    <p><strong>纽约（III）· 美元锚资产</strong>：2025 顶级段 ($10M+) 销售 +29-37%；2025 Q4 现金买家占 74% 历史新高；但曼哈顿 2015-2025 PSF 实际下跌 29%；净租金 2-3%；FIRPTA 15% 预扣。适合作为美元压舱石而非主仓。</p>
+
+    <p><strong>慕尼黑（II）· 欧元稳定锚</strong>：空置率全德最低 (<0.5%)；ECB 降息周期 + 欧元温和升值；持有 >10 年免资本利得税。但收益率 3.42% + 购置税 3.5% + 严格租金管制 + 老旧建筑能源改造成本。是组合稳定器而非增长引擎。</p>
+  </div>
+</section>
+
+<!-- ============ RISK SCENARIOS ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">VI</div>
+    <div class="section-title-group">
+      <h2 class="section-title">未来十年五大地缘政治情景</h2>
+      <div class="section-subtitle">Scenario Analysis · 黑天鹅冲击地图</div>
+    </div>
+  </div>
+
+  <div class="risk-matrix">
+
+    <div class="risk-card med">
+      <div class="risk-prob">概率 15-25% · 中</div>
+      <h4>① 台海武装冲突或封锁<br>(2027-2030 窗口期)</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">受创</div>
+          上海 −30%+<br>香港 −25%<br>东京/首尔 −10~15%
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">受益</div>
+          新加坡<br>迪拜<br>吉隆坡<br>慕尼黑
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-card med-high">
+      <div class="risk-prob">概率 25-40% · 中高 (部分已发生)</div>
+      <h4>② 中东以伊战争全面升级</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">受创</div>
+          迪拜 −15~20% (短期)<br>利雅得 −10~15%
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">受益</div>
+          东京<br>新加坡<br>伦敦
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-card low">
+      <div class="risk-prob">概率 5-10% · 低</div>
+      <h4>③ 俄乌战争扩大至北约直接介入</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">受创</div>
+          慕尼黑 −25%<br>巴黎 −20%<br>伦敦 −15%
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">受益</div>
+          东京<br>新加坡<br>纽约
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-card high">
+      <div class="risk-prob">概率高 · 进行中</div>
+      <h4>④ 美国政治极化危机 (2028 大选)</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">受创</div>
+          纽约 −10~15%<br>伦敦 受波及<br>巴黎 受波及
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">受益</div>
+          新加坡<br>东京<br>迪拜
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-card low">
+      <div class="risk-prob">概率 5-10% · 低</div>
+      <h4>⑤ 朝鲜半岛冲突或核试验</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">受创</div>
+          首尔 −30%<br>东京 −15%
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">受益</div>
+          新加坡<br>吉隆坡<br>大阪
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-card med">
+      <div class="risk-prob">二级风险 · 监控中</div>
+      <h4>⑥ 其他需关注变量</h4>
+      <div class="risk-impact">
+        <div class="impact-block hit">
+          <div class="impact-label">连锁风险</div>
+          中国资本管制再收紧 → 沪港<br>沙特王储继承不顺 → 利雅得<br>法国主权债务危机 → 巴黎/欧元区<br>英国 2026 秋季"豪宅税" → 伦敦
+        </div>
+        <div class="impact-block benefit">
+          <div class="impact-label">触发器</div>
+          以上任一发生即重估
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ALLOCATIONS ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">VII</div>
+    <div class="section-title-group">
+      <h2 class="section-title">三类投资者配置方案</h2>
+      <div class="section-subtitle">Portfolio Construction · 按风险偏好分层</div>
+    </div>
+  </div>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card conservative">
+      <h3>保守型</h3>
+      <div class="portfolio-tagline">资本保全 · 制度安全优先</div>
+      <div class="allocation-row"><span class="allocation-city">东京 (核心区)</span><span class="allocation-bar"><span class="allocation-fill" style="width:75%"></span></span><span class="allocation-pct">30%</span></div>
+      <div class="allocation-row"><span class="allocation-city">大阪 (梅田/难波)</span><span class="allocation-bar"><span class="allocation-fill" style="width:63%"></span></span><span class="allocation-pct">25%</span></div>
+      <div class="allocation-row"><span class="allocation-city">慕尼黑</span><span class="allocation-bar"><span class="allocation-fill" style="width:63%"></span></span><span class="allocation-pct">25%</span></div>
+      <div class="allocation-row"><span class="allocation-city">纽约 (曼哈顿)</span><span class="allocation-bar"><span class="allocation-fill" style="width:50%"></span></span><span class="allocation-pct">20%</span></div>
+      <div class="portfolio-expected">
+        <div class="label">10 年美元年化</div>
+        <div class="value">4.0 – 5.5%<small>(预期)</small></div>
+      </div>
+    </div>
+
+    <div class="portfolio-card balanced">
+      <h3>平衡型</h3>
+      <div class="portfolio-tagline">增长 + 现金流 · 推荐主流</div>
+      <div class="allocation-row"><span class="allocation-city">大阪</span><span class="allocation-bar"><span class="allocation-fill" style="width:88%"></span></span><span class="allocation-pct">35%</span></div>
+      <div class="allocation-row"><span class="allocation-city">东京 (核心+外环)</span><span class="allocation-bar"><span class="allocation-fill" style="width:63%"></span></span><span class="allocation-pct">25%</span></div>
+      <div class="allocation-row"><span class="allocation-city">迪拜 (中端成熟区)</span><span class="allocation-bar"><span class="allocation-fill" style="width:50%"></span></span><span class="allocation-pct">20%</span></div>
+      <div class="allocation-row"><span class="allocation-city">吉隆坡 (KLCC/满家乐)</span><span class="allocation-bar"><span class="allocation-fill" style="width:38%"></span></span><span class="allocation-pct">15%</span></div>
+      <div class="allocation-row"><span class="allocation-city">慕尼黑</span><span class="allocation-bar"><span class="allocation-fill" style="width:13%"></span></span><span class="allocation-pct">5%</span></div>
+      <div class="portfolio-expected">
+        <div class="label">10 年美元年化</div>
+        <div class="value">5.5 – 7.0%<small>(预期)</small></div>
+      </div>
+    </div>
+
+    <div class="portfolio-card aggressive">
+      <h3>进取型</h3>
+      <div class="portfolio-tagline">高 alpha · 承担地缘风险</div>
+      <div class="allocation-row"><span class="allocation-city">大阪 (含 IR 周边)</span><span class="allocation-bar"><span class="allocation-fill" style="width:50%"></span></span><span class="allocation-pct">20%</span></div>
+      <div class="allocation-row"><span class="allocation-city">迪拜 (DIFC + 中端)</span><span class="allocation-bar"><span class="allocation-fill" style="width:50%"></span></span><span class="allocation-pct">20%</span></div>
+      <div class="allocation-row"><span class="allocation-city">吉隆坡 (高 yield)</span><span class="allocation-bar"><span class="allocation-fill" style="width:38%"></span></span><span class="allocation-pct">15%</span></div>
+      <div class="allocation-row"><span class="allocation-city">利雅得 (Diriyah/Sedra)</span><span class="allocation-bar"><span class="allocation-fill" style="width:25%"></span></span><span class="allocation-pct">10%</span></div>
+      <div class="allocation-row"><span class="allocation-city">香港 (反弹 40-100㎡)</span><span class="allocation-bar"><span class="allocation-fill" style="width:38%"></span></span><span class="allocation-pct">15%</span></div>
+      <div class="allocation-row"><span class="allocation-city">东京 + 纽约</span><span class="allocation-bar"><span class="allocation-fill" style="width:50%"></span></span><span class="allocation-pct">20%</span></div>
+      <div class="portfolio-expected">
+        <div class="label">10 年美元年化</div>
+        <div class="value">6.5 – 9.0%<small>(目标)</small></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ DECISION TRIGGERS ============ -->
+<section>
+  <div class="section-header">
+    <div class="section-number">VIII</div>
+    <div class="section-title-group">
+      <h2 class="section-title">关键决策触发器</h2>
+      <div class="section-subtitle">Trigger Points · 何时加仓 · 何时减仓 · 何时轮动</div>
+    </div>
+  </div>
+
+  <div class="triggers">
+
+    <div class="trigger-block buy">
+      <h4>加仓信号 BUY</h4>
+      <ul>
+        <li>JPY/USD 跌至 165+ (东京/大阪进一步折价)</li>
+        <li>沙特外资法 2026/1 平稳落地，无配套增税</li>
+        <li>伦敦 2026 秋季预算未推"豪宅税"</li>
+        <li>美联储 2026 降息 ≥150bp (纽约/伦敦再评估)</li>
+        <li>BOJ 加息温和，不超 1.5%</li>
+      </ul>
+    </div>
+
+    <div class="trigger-block sell">
+      <h4>减仓信号 REDUCE</h4>
+      <ul>
+        <li>台海升级至 PLA 实弹封锁演习</li>
+        <li>MM2H 第三次重大调整 (吉隆坡)</li>
+        <li>利雅得租金冻结延长至 10 年</li>
+        <li>新加坡 ABSD 上调至 70%</li>
+        <li>迪拜单季 Prime 跌幅 >10%</li>
+      </ul>
+    </div>
+
+    <div class="trigger-block rotate">
+      <h4>轮动信号 ROTATE</h4>
+      <ul>
+        <li>中美关税战重启 → 增加吉隆坡/迪拜/利雅得</li>
+        <li>JPY 升至 130 以下 → 锁定东京/大阪美元利润</li>
+        <li>BOE 大幅降息 → 重新评估伦敦西区办公</li>
+        <li>港股恒指突破 26000 → 香港住宅二次反弹</li>
+        <li>中国房地产税试点扩大 → 加速回避上海</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ ONE-LINE CONCLUSION ============ -->
+<div class="pullquote">
+  最佳综合配置 = <em>大阪 35%</em> + 东京 25% + 迪拜 20% + 吉隆坡 15% + 慕尼黑 5%<br>
+  <span style="font-size:0.8em; opacity:0.7;">货币分散：JPY 60% · USD 挂钩 25% · MYR 10% · EUR 5%</span>
+</div>
+
+<!-- ============ CAVEATS ============ -->
+<div class="caveats">
+  <h3>重要说明与风险提示 · Caveats</h3>
+  <ol>
+    <li><strong>评分主观性</strong>：地缘政治权重 35% 反映 2026 年所处的"地缘碎片化"环境；权重下调至 25% 会使纽约/伦敦/巴黎排名上升 1-2 档。</li>
+    <li><strong>10 年预测局限</strong>：所有引用机构最长可靠展望约 3-5 年，10 年属于推断范围。建议每 18-24 个月重新评估。任何 10 年期排名都有 25-40% 的概率被黑天鹅推翻。</li>
+    <li><strong>数据时效</strong>：核心数据为 2025 Q3 – 2026 Q1。2026 年 5 月之后若发生重大事件（如沙特外资法细则、新加坡 ABSD 调整、英国 2026 秋季预算最终版），需更新评分。</li>
+    <li><strong>汇率假设</strong>：所有 USD 换算基于 2026 Q1 汇率（1USD ≈ 150 JPY / 1.34 SGD / 1,400 KRW / 7.15 CNY / 7.83 HKD / 4.20 MYR / 3.6725 AED / 3.75 SAR / 0.78 GBP / 0.92 EUR）。</li>
+    <li><strong>个人税务复杂性</strong>：每位投资者实际净收益受所在国税务居民身份、双重征税协定影响。本报告税率为名义值，必须与持牌税务师确认。</li>
+    <li><strong>未量化变量</strong>：(a) BOJ 货币正常化节奏；(b) 美联储 2026-27 降息路径；(c) 习近平第三任后期人事；(d) 2028 美国大选；(e) 沙特王储继承。这些是 10 年期判断的核心 wild cards。</li>
+    <li><strong>不构成投资建议</strong>：本综合报告为基于公开报告与一手数据的分析框架整合，不是个人化投资建议。重大投资决策请咨询持牌房地产顾问、税务师与律师；尤其建议在购入前进行实地考察与租金回报实测。</li>
+    <li><strong>未涵盖城市</strong>：悉尼、墨尔本、班加罗尔、雅加达、曼谷、奥斯汀、迈阿密、苏黎世、米兰等可能改变 B 档以下排名的市场未纳入本次 13 城范围。</li>
+  </ol>
+</div>
+
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-mark">独立投资研究<em>·</em>2026</div>
+    <div class="footer-meta">综合自四份独立分析报告 · 加权地缘政治 35% · 美元 10 年视角 · 不构成投资建议</div>
+  </div>
+</footer>
+
+</body>
+</html>
