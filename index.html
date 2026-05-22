@@ -869,9 +869,239 @@
   .summary-block, .tier-card, .city-detail {
     animation: fadeUp 0.6s ease backwards;
   }
+
+  /* ===== Entry overlay (click-to-enter cover) ===== */
+  .enter-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    cursor: pointer;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(184, 146, 79, 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(184, 146, 79, 0.08) 0%, transparent 45%),
+      #0d1b2a;
+    transition: opacity 0.55s ease, visibility 0.55s ease;
+  }
+  .enter-overlay.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  .enter-card {
+    text-align: center;
+    max-width: 680px;
+    color: var(--cream);
+    animation: enter-rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes enter-rise {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .enter-eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    margin-bottom: 24px;
+  }
+  .enter-name {
+    font-family: "Fraunces", "Noto Serif SC", serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .enter-name em { font-style: italic; font-weight: 400; color: var(--gold-bright); }
+  .enter-sub {
+    font-family: "Noto Serif SC", serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: rgba(244, 237, 226, 0.78);
+    max-width: 540px;
+    margin: 0 auto 26px;
+  }
+  .enter-date {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: rgba(244, 237, 226, 0.5);
+    border-top: 1px solid rgba(244, 237, 226, 0.18);
+    border-bottom: 1px solid rgba(244, 237, 226, 0.18);
+    padding: 10px 0;
+    display: inline-block;
+    margin-bottom: 34px;
+  }
+  .enter-btn {
+    font-family: "Inter", "Noto Serif SC", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 100%);
+    border: none;
+    border-radius: 40px;
+    padding: 14px 40px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    animation: enter-btn-pulse 2.6s ease-in-out infinite;
+  }
+  .enter-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+  .enter-btn-ico { font-size: 11px; }
+  @keyframes enter-btn-pulse {
+    0%, 100% { box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4); }
+    50%      { box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 0 0 11px rgba(212, 168, 87, 0.13); }
+  }
+  .enter-hint {
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: rgba(244, 237, 226, 0.42);
+  }
+
+  /* ===== Inline music player (below masthead title) ===== */
+  .music-player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 420px;
+    margin: 26px auto 0;
+    padding: 9px 16px;
+    background: var(--cream-warm);
+    border: 1px solid var(--line);
+    border-radius: 40px;
+  }
+  .mp-btn {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--cream);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 1;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .mp-btn:hover { transform: scale(1.09); background: var(--rust); }
+  .mp-icon-play { margin-left: 2px; }
+  .mp-icon-pause { display: none; letter-spacing: -1px; }
+  .music-player.playing .mp-icon-play { display: none; }
+  .music-player.playing .mp-icon-pause { display: inline; }
+  .mp-track {
+    position: relative;
+    flex: 1;
+    height: 5px;
+    background: rgba(13, 27, 42, 0.14);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .mp-track:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .mp-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-bright) 100%);
+    border-radius: 3px;
+  }
+  .mp-thumb {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 13px;
+    height: 13px;
+    transform: translate(-50%, -50%);
+    background: var(--cream);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+  .mp-time {
+    flex-shrink: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--slate);
+    min-width: 76px;
+    text-align: right;
+  }
+
+  /* ===== Floating music button ===== */
+  .music-toggle {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    background: var(--ink);
+    color: var(--gold-bright);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(13, 27, 42, 0.3);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 999;
+    opacity: 0.85;
+  }
+  .music-toggle:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(13, 27, 42, 0.42);
+  }
+  .music-toggle.paused { opacity: 0.5; }
+  .music-toggle.paused:hover { opacity: 0.85; }
+  .music-icon { font-size: 19px; line-height: 1; display: block; }
+  .music-toggle.playing .music-icon { animation: music-pulse 1.6s ease-in-out infinite; }
+  @keyframes music-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.2); }
+  }
+
+  @media (max-width: 600px) {
+    .enter-sub { font-size: 0.95rem; }
+    .enter-btn { font-size: 14px; padding: 12px 32px; }
+  }
+  @media print {
+    .enter-overlay, .music-player, .music-toggle { display: none !important; }
+  }
 </style>
 </head>
 <body>
+
+<!-- ============ ENTRY OVERLAY ============ -->
+<div class="enter-overlay" id="enter-overlay" role="button" tabindex="0" aria-label="点击进入报告">
+  <div class="enter-card">
+    <div class="enter-eyebrow">INDEPENDENT INVESTMENT RESEARCH</div>
+    <div class="enter-name">13城全球房地产<br><em>投资潜力终极评估</em></div>
+    <div class="enter-sub">融合 PwC-ULI、JLL、Kearney、Knight Frank 四份独立分析的 2026 权威综合版</div>
+    <div class="enter-date">2026年5月版 · VOL. I</div>
+    <button class="enter-btn" id="enter-btn" type="button"><span class="enter-btn-ico" aria-hidden="true">▶</span> 点击进入报告</button>
+    <div class="enter-hint">♪ 进入后将自动播放背景音乐</div>
+  </div>
+</div>
+<noscript><style>#enter-overlay{display:none!important;}</style></noscript>
 
 <!-- ============ MASTHEAD ============ -->
 <header class="masthead">
@@ -885,6 +1115,11 @@
       <h1>13城全球房地产<br><em>投资潜力终极评估</em></h1>
       <p class="deck">基于四份独立分析报告的权威综合版。融合 PwC-ULI 2026 亚太新兴趋势、JLL 全球展望、Kearney 全球城市指数、Knight Frank 价格指数及第一手政策数据，回答唯一的问题：未来十年，哪些城市真正值得投入美元资本。</p>
       <div class="byline">综合自 13城对比报告 · 美元视角核心地段报告 · 全球城市潜力分析</div>
+      <div class="music-player" id="music-player">
+        <button class="mp-btn" id="mp-btn" type="button" aria-label="播放或暂停背景音乐"><span class="mp-icon-play" aria-hidden="true">▶</span><span class="mp-icon-pause" aria-hidden="true">❚❚</span></button>
+        <div class="mp-track" id="mp-track" role="slider" aria-label="音乐进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><div class="mp-fill" id="mp-fill"></div><div class="mp-thumb" id="mp-thumb"></div></div>
+        <span class="mp-time" id="mp-time">0:00 / 0:00</span>
+      </div>
     </div>
   </div>
 </header>
@@ -1548,5 +1783,127 @@
   </div>
 </footer>
 
+<!-- ============ BACKGROUND MUSIC ============ -->
+<audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+<button id="music-toggle" class="music-toggle paused" type="button" aria-label="背景音乐" title="播放背景音乐"><span class="music-icon" aria-hidden="true">♪</span></button>
+<script>
+// Background music — entry overlay + inline player + floating toggle
+(function() {
+  const audio = document.getElementById('bgm');
+  if (!audio) return;
+
+  const fab = document.getElementById('music-toggle');
+  const player = document.getElementById('music-player');
+  const playBtn = document.getElementById('mp-btn');
+  const trackEl = document.getElementById('mp-track');
+  const fillEl = document.getElementById('mp-fill');
+  const thumbEl = document.getElementById('mp-thumb');
+  const timeEl = document.getElementById('mp-time');
+
+  audio.volume = 0.35; // gentle background level
+
+  function fmt(t) {
+    if (!isFinite(t) || t < 0) t = 0;
+    const m = Math.floor(t / 60);
+    const s = Math.floor(t % 60);
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  // Sync play/pause visual state across both controls
+  function reflect() {
+    const playing = !audio.paused;
+    if (player) player.classList.toggle('playing', playing);
+    if (fab) {
+      fab.classList.toggle('playing', playing);
+      fab.classList.toggle('paused', !playing);
+      fab.title = playing ? '暂停背景音乐' : '播放背景音乐';
+    }
+  }
+
+  // Update progress bar + time readout
+  function updateProgress() {
+    const dur = audio.duration || 0;
+    const pct = dur ? (audio.currentTime / dur) * 100 : 0;
+    if (fillEl) fillEl.style.width = pct + '%';
+    if (thumbEl) thumbEl.style.left = pct + '%';
+    if (timeEl) timeEl.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    if (trackEl) trackEl.setAttribute('aria-valuenow', Math.round(pct));
+  }
+
+  audio.addEventListener('play', reflect);
+  audio.addEventListener('pause', reflect);
+  audio.addEventListener('timeupdate', updateProgress);
+  audio.addEventListener('loadedmetadata', updateProgress);
+  audio.addEventListener('durationchange', updateProgress);
+
+  // Play/pause toggle — shared by inline button and floating button
+  function toggle(e) {
+    if (e) e.stopPropagation();
+    if (audio.paused) audio.play().catch(function() {});
+    else audio.pause();
+  }
+  if (playBtn) playBtn.addEventListener('click', toggle);
+  if (fab) fab.addEventListener('click', toggle);
+
+  // Seek by clicking or dragging the progress track
+  if (trackEl) {
+    let dragging = false;
+    function seek(e) {
+      const rect = trackEl.getBoundingClientRect();
+      const x = (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
+      let ratio = (x - rect.left) / rect.width;
+      ratio = Math.max(0, Math.min(1, ratio));
+      if (audio.duration) audio.currentTime = ratio * audio.duration;
+      updateProgress();
+    }
+    trackEl.addEventListener('mousedown', function(e) { dragging = true; seek(e); e.preventDefault(); });
+    document.addEventListener('mousemove', function(e) { if (dragging) seek(e); });
+    document.addEventListener('mouseup', function() { dragging = false; });
+    trackEl.addEventListener('touchstart', seek, { passive: true });
+    trackEl.addEventListener('touchmove', seek, { passive: true });
+    trackEl.addEventListener('keydown', function(e) {
+      if (!audio.duration) return;
+      if (e.key === 'ArrowRight') audio.currentTime = Math.min(audio.duration, audio.currentTime + 5);
+      else if (e.key === 'ArrowLeft') audio.currentTime = Math.max(0, audio.currentTime - 5);
+      else return;
+      e.preventDefault();
+      updateProgress();
+    });
+  }
+
+  // Entry overlay — the click that enters the report also starts the music
+  // (a user gesture, so playback is permitted by the browser autoplay policy)
+  const overlay = document.getElementById('enter-overlay');
+  if (overlay) {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    let entered = false;
+    function enterReport() {
+      if (entered) return;
+      entered = true;
+      overlay.classList.add('hidden');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      audio.play().catch(function() {});
+      setTimeout(function() { overlay.style.display = 'none'; }, 650);
+    }
+    overlay.addEventListener('click', enterReport);
+    overlay.addEventListener('keydown', enterReport);
+  }
+
+  // Fallback: also start on first interaction if the overlay was skipped
+  const gestures = ['click', 'scroll', 'keydown', 'touchstart'];
+  function autoStart() {
+    gestures.forEach(function(ev) { document.removeEventListener(ev, autoStart); });
+    if (audio.paused) audio.play().catch(function() {});
+  }
+  gestures.forEach(function(ev) { document.addEventListener(ev, autoStart, { passive: true }); });
+
+  audio.play().catch(function() {}); // optimistic; usually blocked until a gesture
+
+  reflect();
+  updateProgress();
+})();
+</script>
 </body>
 </html>
